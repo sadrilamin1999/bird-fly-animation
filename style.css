@@ -1,0 +1,32 @@
+/* style.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #9af1be, #f7f6e5);
+}
+
+.bird {
+  min-width: 400px;
+  height: auto;
+  animation: fly 4s ease-in-out infinite, 0.5s steps(3) infinite;
+}
+
+@keyframes fly {
+  0% {
+    transform: translate(0);
+  }
+  50% {
+    transform: translateY(-100px); /* Move up */
+  }
+  100% {
+    transform: translateY(0); /* Move back to original position */
+  }
+}
